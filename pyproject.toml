@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "market-agent"
+version = "0.1.0"
+description = ""
+authors = ["Richard Blythman <richardblythman@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+pydantic = "*"
+tenacity = "*"
+pydantic_core = "*"
+openai = "*"
+anthropic = "*"
+typing_extensions = "*"
+pydantic_settings = "*"
+aiohttp = "*"
+tiktoken = "*"
+pyyaml = "*"
+python-dotenv = "*"
+names = "^0.3.0"
+
+
+[tool.poetry.dependencies.naptha-sdk]
+git = "https://github.com/NapthaAI/naptha-sdk.git"
+branch = "feat/run-agent-tools"
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
