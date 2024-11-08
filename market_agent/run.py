@@ -1142,7 +1142,7 @@ class ParallelAIUtilities:
                  local_cache: bool = True,
                  cache_folder: Optional[str] = None):
         load_dotenv()
-        self.openai_key = os.getenv("OPENAI_KEY")
+        self.openai_key = os.getenv("OPENAI_API_KEY")
         self.anthropic_key = os.getenv("ANTHROPIC_API_KEY")
         self.vllm_key = os.getenv("VLLM_API_KEY")
         self.vllm_endpoint = os.getenv("VLLM_ENDPOINT", "http://localhost:8000/v1/chat/completions")
